@@ -1,0 +1,13 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: fos
+    database_user: root
+    database_password: null
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: "andresmontealegregiraldo@gmail.com"
+    mailer_sender: "ANDES FOSUser"
+    mailer_password: null
+    secret: a4524600f4ed3be1556d2e99385b481f100d3824
