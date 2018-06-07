@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="`user`")
+ * @ORM\Table(name="fos_user")
  */
 class User extends BaseUser
 {
@@ -17,16 +17,14 @@ class User extends BaseUser
      */
     protected $id;
 
-
-
-    public function getId(){
-
+    public function __construct()
+    {
+        parent::__construct();
+        // your own logic
+        //$this->roles = array('ROLE_USER');
+        $this->roles = array('ROLE_ADMIN');
     }
 }
-
-
-
-
 
 
 
